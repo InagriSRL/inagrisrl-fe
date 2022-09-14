@@ -1,0 +1,32 @@
+.main-banner {
+	background-image: url('../../assets/images/bg.png');
+	height: 70vh;
+
+	@apply text-white bg-cover bg-no-repeat bg-center relative;
+
+	.main-banner__overlay {
+		@apply absolute w-full h-full bg-black opacity-70;
+	}
+
+	.main-banner__content {
+		@apply absolute z-20 flex flex-col w-full justify-between py-24 items-center;
+
+		h1 {
+			@apply text-8xl tracking-wider;
+		}
+
+		p {
+			text-shadow: 1px 1px black;
+
+			@apply text-3xl w-4/5 text-center;
+
+			@screen lg {
+				@apply w-1/5 mb-16;
+			}
+		}
+
+		.button {
+			@apply w-40 text-xl;
+		}
+	}
+}

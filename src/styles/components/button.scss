@@ -1,0 +1,16 @@
+.button {
+	@apply w-36 h-12 rounded-xl text-lg tracking-wide text-black uppercase border-none cursor-pointer shadow-xl flex justify-center items-center;
+
+	&:hover {
+		box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+		transform: translateY(-0.25em);
+	}
+}
+
+.button--green {
+	@apply bg-secondary;
+}
+
+.button--blue {
+	@apply bg-tertiary;
+}

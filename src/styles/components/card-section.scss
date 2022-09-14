@@ -1,0 +1,35 @@
+.card-section {
+	@apply w-full my-20 flex flex-col justify-between;
+
+	@screen lg {
+		@apply flex-row;
+	}
+
+	.card-section__box {
+		@screen lg {
+			@apply w-2/5;
+		}
+
+		img {
+			@apply w-full rounded-xl shadow-2xl;
+		}
+	}
+
+	.card-section__text {
+		@apply flex justify-center items-center;
+
+		@screen lg {
+			@apply w-2/5;
+		}
+
+		p {
+			@apply w-full text-2xl leading-10;
+		}
+	}
+}
+
+.card-section--right {
+	@screen lg {
+		@apply flex-row-reverse;
+	}
+}

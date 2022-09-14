@@ -1,0 +1,37 @@
+.page {
+	.page__main {
+		@apply container mx-auto;
+
+		h2 {
+			@apply text-4xl text-center mb-4;
+		}
+
+		.page__main__us {
+			@apply px-8;
+		}
+
+		.page__main__products {
+			@apply px-8;
+
+			@screen md {
+				@apply px-0;
+			}
+
+			button {
+				@apply mx-auto  my-8;
+
+				@screen md {
+					@apply hidden;
+				}
+			}
+
+			.page__products__wrapper {
+				@apply flex flex-wrap mt-20;
+
+				@screen md {
+					@apply justify-around;
+				}
+			}
+		}
+	}
+}

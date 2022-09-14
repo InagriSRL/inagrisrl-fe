@@ -1,0 +1,56 @@
+.footer {
+	@apply bg-dark text-white mt-24;
+
+	.footer__wrapper {
+		@apply flex flex-col items-center;
+
+		@screen md {
+			@apply flex-row justify-center py-8;
+		}
+
+		a {
+			@apply text-white;
+		}
+
+		.footer__contacts {
+			@apply w-56;
+
+			h4 {
+				@apply text-center;
+			}
+
+			.footer__contacts__phone,
+			.footer__contacts__email {
+				@apply flex justify-between;
+
+				svg {
+					@apply fill-white w-6;
+				}
+			}
+
+			.footer__contacts__socials {
+				@apply flex justify-between my-4;
+
+				svg {
+					@apply w-8;
+				}
+			}
+		}
+
+		.footer__rights {
+			@apply flex flex-col mt-20 mb-4;
+
+			@screen md {
+				@apply ml-40 mt-auto;
+			}
+
+			img {
+				@apply w-36 mx-auto;
+			}
+
+			small {
+				@apply text-xs mt-2;
+			}
+		}
+	}
+}

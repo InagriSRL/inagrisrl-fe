@@ -1,0 +1,15 @@
+body {
+	@apply m-0 p-0 font-sans;
+
+	h1 {
+		@apply mt-0 text-6xl;
+	}
+
+	a {
+		@apply no-underline text-center;
+	}
+}
+
+ul {
+	margin-top: 0;
+}

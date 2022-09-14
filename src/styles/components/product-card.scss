@@ -1,0 +1,28 @@
+.product-card {
+	width: 32rem;
+	@apply flex flex-col items-center my-6 mx-auto;
+
+	@screen md {
+		width: 20rem;
+	}
+
+	@screen lg {
+		width: 32rem;
+	}
+
+	img {
+		@apply rounded-full w-56 shadow-lg;
+	}
+
+	p {
+		@apply w-2/3;
+	}
+}
+
+.product-card--hidden {
+	@apply hidden;
+
+	@screen md {
+		@apply flex;
+	}
+}
